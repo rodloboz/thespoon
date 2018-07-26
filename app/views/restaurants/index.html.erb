@@ -1,0 +1,14 @@
+<h1>Restaurants</h1>
+<p>Welcome to the Restaurants index</p>
+
+<p>You picked <%= @food_type %></p>
+
+<ul>
+  <% @restaurants.each do |id, restaurant| %>
+  <li>
+    <p><%= restaurant[:name].capitalize %></p>
+    <p><%= restaurant[:address] %></p>
+    <p><%= restaurant[:category] %></p>
+  </li>
+  <% end %>
+</ul>
